@@ -1,0 +1,77 @@
+@import url("./reset.css");
+
+/* 변수, 
+-- 하이픈 두 개 붙이는게 규칙 
+root css 어느 문서에서든 적용*/
+
+:root{
+  --w-size:1473px;
+}
+
+
+
+
+header{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header > nav{
+  
+}
+header > nav > a{
+  padding:50px 120px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+header > h1{}
+header > h1 > a{}
+
+
+main{}
+.visual{
+  height: 350px;
+  background: url('../img/Rectangle\ 9.jpg') 0 0 / cover no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.visual > h2{
+  color: rgba(255,255,255,0.8);
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: italic;
+}
+.menu{
+  width: var(--w-size); 
+  margin:150px auto;
+  text-align: center;
+}
+.menu > h3{font-size: 1.8rem;}
+.menu > h3::after{ 
+  content:'';
+  width:100px;
+  border:1px solid black;
+  display:block;
+  margin:20px auto;
+}
+.menu > p{}
+.menu > ul{
+  display: flex; /*플렉스 쓰고 자식한테 사이즈 넣어줘야함*/
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.menu > ul > li{width:300px;} /*이미지크기지정*/
+.menu > ul > li > figure{}
+.menu > ul > li > figure  img{width:100%} /*이미지 사이즈 꼭 넣어주기*/
+.menu > ul > li > figure > figcaption{margin-top: 40px;}
+
+.menu > ul > li > figure p {height: 300px; overflow: hidden;}
+.menu > ul > li > figure  img:hover{
+  width:150%;
+  transition: 0.5s;
+}
+
