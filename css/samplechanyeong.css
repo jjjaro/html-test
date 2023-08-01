@@ -1,0 +1,120 @@
+img{vertical-align: middle;}
+
+header{
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+header > nav > a{
+  padding:30px 60px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+/*main*/
+.forest{
+  height: 550px;
+  background: url('../img/img_visual.jpg') 0 0 / cover no-repeat;
+}
+.forest > ul{
+  position: relative;
+  top:15%; left: 55%;
+  width: 440px;
+  padding: 30px 60px 50px 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.6rem;
+}
+.forest > ul > p{
+  color : #CEC5B8;
+}
+.forest > ul > h2{
+  margin: 20px 0;
+  color:white;
+  font-size: 45px;
+}
+.forest > ul > a{
+  text-decoration:none;
+  color: white;
+  font-size: 1rem;
+}
+.forest > figure{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom:-20%;
+}
+.forest > figure > p > a{
+  padding:10px;  
+}
+.forest > figure > p > a > img {
+  width: 200px;  height: 140px;
+  object-fit: cover;
+  padding: 0 15px;
+  transition: 1s;
+}
+.forest > figure > p > a > img:hover {
+  transform: scale(1.5);}
+
+
+.sub{
+  padding: 50px 50px 0;
+  width:80%; margin:100px auto ;
+  font-size: 1.6rem;
+}
+.sub > h2{ font-size: 50px; }
+.sub > p{
+  width: 600px;
+}
+.sub > a{
+  padding:8px 15px;
+  border-radius: 30px ;
+  background-color: rgb(166, 166, 166);
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration:none;
+}
+
+/*season*/
+.season > figure{
+  padding:0 50px;
+  width:80%; margin:50px auto;
+  display:flex;
+  align-items: center;
+  justify-content:  space-between;
+  font-size: 1.5rem;
+}
+.season > figure > p > img{
+  width: 500px;  height: 350px;
+  object-fit: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+}
+.season > figure > figcaption{
+  width: 600px;
+  padding: 0 0 0 50px;
+}
+.season > figure > figcaption > p{
+  width: 600px;
+}
+
+.season > figure:nth-of-type(2) > figcaption{
+  padding: 0 50px 0 0;
+  width: 1000px;
+}
+.season > figure:nth-of-type(2) > p > img{
+  width: 400px;  height: 400px;
+  object-fit: none;
+  left:-10%;
+}
+
+.season > figure:nth-of-type(2) > figcaption > a{
+  padding:8px 15px;
+  border-radius: 30px ;
+  background-color: rgb(166, 166, 166);
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration:none;
+}
